@@ -154,6 +154,22 @@ body.light-mode #home h4 {
   filter: brightness(0.8);
 }
 
+/* body #logo-dark {
+  display: none;
+}
+
+body.light-mode #logo-dark {
+  display: block;
+}
+
+body.light-mode #logo-white {
+  display: none; 
+} */
+
+body #logo-white {
+  display: block; 
+}
+
 .button:hover {
   color: #fff;
   background-color: var(--primary-hover);
@@ -281,7 +297,12 @@ a.logo {
   font-family: "Gemunu Libre", sans-serif;
   font-size: 3rem;
   opacity: 0.7;
+
+  img {
+    height: 45px;  
+  }
 }
+
 
 nav#navigation a.logo {
   color: var(--primary-color);
@@ -483,6 +504,14 @@ body.menu-expanded button path {
   position: relative;
 }
 
+#home .col-c {
+  img {
+    border-radius: 50%;
+    height: 12em;
+    width: 12em;
+  }
+}
+
 @keyframes flutuar {
   0% {
     transform: translateY(2rem);
@@ -502,7 +531,7 @@ body.menu-expanded button path {
   width: 27rem;
   height: 27rem;
 
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   border-radius: 100%;
 
   position: absolute;
@@ -1095,7 +1124,8 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   nav#navigation .menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
 
     width: 70%;
   }
@@ -1294,6 +1324,13 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     }
   }
 
+  #home .col-c {
+    img {
+      height: 20em;
+      width: 20em;
+    }
+  }
+
   /*===== ABOUT =======================================*/
 
   #about .wrapper {
@@ -1475,6 +1512,13 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   #home .wrapper::before {
     bottom: -2rem;
+  }
+
+  #home .col-c {
+    img {
+      height: 12em;
+      width: 12em;
+    }
   }
 
   /*===== ABOUT ==================================*/
