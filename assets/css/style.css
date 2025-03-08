@@ -251,9 +251,16 @@ header .grid-layout nav .nav-list li a:hover {
   font-size: 4rem;
   font-weight: 500;
 }
+#s-home .grid-layout #home #home-container-text #mobile-logo {
+  display: none;
+}
 @media screen and (max-width: 992px) {
   #s-home .grid-layout #home #home-container-text h1 {
     font-size: 3.2rem;
+  }
+  #s-home .grid-layout #home #home-container-text #mobile-logo {
+    display: flex;
+    margin: 40px 0px;
   }
 }
 #s-home .grid-layout #home #home-container-text h1 span {
