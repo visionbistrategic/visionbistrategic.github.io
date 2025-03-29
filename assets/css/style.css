@@ -270,6 +270,7 @@ header .grid-layout nav .nav-list li a:hover {
   color: #9ca3af;
   font-size: 2rem;
   max-width: 600px;
+  height: 64px;
   margin: 40px 0px;
   font-weight: 300;
   line-height: 160%;
